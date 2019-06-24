@@ -17,7 +17,7 @@ void setup() {
 void loop() {
   // Read de analog pin
   float  val = analogRead(A0);
-  //ad new value
+  //add new value
   runMean.addNew(val);
   //get the running mean with new value and NVALUES-1 previous
   Serial.println(runMean.getMean());
